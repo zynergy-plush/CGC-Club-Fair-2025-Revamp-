@@ -45,6 +45,7 @@ body {
     width: 100%;
     padding: 20px 10%;
     background: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
     backdrop-filter: blur(5px); /* Optional: Adds a blur effect */
     display: flex;
     justify-content: space-between;
@@ -182,8 +183,9 @@ button:hover {
 .cards-blur-container {
     width: 100%;
     margin: 150px auto; /* pushes below navbar */
-    border-radius: 15px;/
+    border-radius: 15px;
     -webkit-backdrop-filter: blur(12px); /* Safari support */
+    backdrop-filter: blur(12px); /* Standard property for compatibility */
     display: flex;
     justify-content: center; /* center the inner cards container */
 }
