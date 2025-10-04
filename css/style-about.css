@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-    height: 60px; /* Ensure a proper navbar height */
+    height: 70px; /* Ensure a proper navbar height */
 }
 
 
@@ -153,3 +153,115 @@ button:hover {
     color: black;
 }
 
+/* Outer container with blur */
+.content-container {
+    width: 85%;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(15px); /* Safari support */
+    backdrop-filter: blur(15px); /* frosted glass effect */
+}
+
+/* Inner section styling */
+.content-section {
+    line-height: 1.9;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    font-size: 1.15rem;  /* Increased base font size */
+}
+
+.content-section h1 {
+    text-align: center;
+    font-size: 2.8em;   /* Slightly bigger heading */
+    margin-bottom: 40px;
+    color: #ededed;
+}
+
+.content-block p {
+    font-size: 13pt;   /* Slightly bigger paragraph text */
+}
+
+
+.content-block {
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.content-block img {
+    width: 280px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.left-img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.right-img {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+    .content-block img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    size: 10px;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-sci a:hover {
+    color: #081b29;
+    box-shadow: 0 0 25px #00abf0;
+}

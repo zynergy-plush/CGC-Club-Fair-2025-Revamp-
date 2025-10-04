@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-    height: 60px; /* Ensure a proper navbar height */
+    height: 70px; /* Ensure a proper navbar height */
 }
 
 
@@ -123,22 +123,18 @@ body {
 }
 
 .description .ratri {
-    color: #ff0303;
+    color: #ff8e03;
 }
 
 .description .sheza {
     color: #03ff20;
 }
 
-.description .naushad {
-    color: #ff8e03;
-}
-
 button {
     margin-top: 100px;
     margin-bottom: 30px;
     background-color: transparent;
-    border: 0.1px solid #00abf0;
+    border: 0.1px solid transparent;
     padding: 10px;
     border-radius: 5px;
     transition: .5s;    
@@ -149,3 +145,63 @@ button:hover {
     color: black;
 }
 
+.cards {
+    width: 20%;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 95px;
+    margin-top: 100px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+/* Default hover removed, now individual */
+.cards:hover {
+    box-shadow: none;
+}
+
+/* ZYNERGY card (green glow) */
+ .zynergy-card {
+    border-color: #03ff20;
+}
+.zynergy-card:hover {
+    box-shadow: 0 0 25px #03ff20, 0 0 50px #03ff20;
+    transition: .4s;
+}
+
+/* ELICTRUX card (orange glow) */
+.elictrux-card {
+    border-color: #ff8e03;
+}
+.elictrux-card:hover {
+    box-shadow: 0 0 25px #ff8e03, 0 0 50px #ff8e03;
+    transition: .4s;
+}
+
+.cards-blur-container {
+    width: 100%;
+    margin: 150px auto; /* pushes below navbar */
+    border-radius: 15px;/
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
+    display: flex;
+    justify-content: center; /* center the inner cards container */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center; /* center cards horizontally */
+    align-items: flex-start;
+    gap: 150px; /* space between cards */
+    flex-wrap: wrap; /* responsive wrap */
+}
+
+.cards {
+    width: 20%;
+    background-color: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+    margin: 0; /* spacing handled by gap */
+}

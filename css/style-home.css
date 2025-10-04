@@ -94,8 +94,9 @@ body {
 
 .home-content .image img {
     position: absolute;
-    right: 350px;
-    width: 275px;
+    right: 330px;
+    bottom: 32%;
+    width: 270px;
     border-radius: 50%;
     transition: box-shadow 0.3s ease-in-out; /* Smooth effect */
 }

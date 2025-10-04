@@ -50,7 +50,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 9999;
-    height: 60px; /* Ensure a proper navbar height */
+    height: 70px; /* Ensure a proper navbar height */
 }
 
 
@@ -93,7 +93,7 @@ body {
     height: 100%;
     background-color: transparent;
     border: 5px;
-    margin: 75px;
+    margin: 100px;
     /* left: 10px; */
     margin-top: 100px;
     border-radius: 15px;
