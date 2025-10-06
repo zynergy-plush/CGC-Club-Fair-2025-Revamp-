@@ -29,13 +29,18 @@ What it contains👜:
 Recently Added🆕:
 1. Added Gallery page, where we can showcase what club members have designed or made.
 2. Changed Resources page into a more purposeful page: The About CGC page, which shows why, how and what we do in CGC.
+3. Added more designs factors to help with readability and overall impression (like frosted glass effects, etc.)
 
 
 Recently Fixed🔨:
 1. Fixed rendering issues
-2. Added more designs factors to help with readability and overall impression (like frosted glass effects, etc.)
-3. Made background dynamic.
-4. Added more information elements.
+2. Made background dynamic.
+3. Added more information elements.
+4. Removed unnecessary content and fixed out-of-place webkit elements.
+5. Fixed compatibility issues for all browsers.
+
+Bugs 🐜:
+1. Becomes distorted when viewed from different devices/dimensions.
 
 
 ❗Note: Use the code files for inspiration, not making something 99.67% similar to this project.
