@@ -158,3 +158,31 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+
+// ===== Video Modal =====
+const videoBox = document.querySelector('.video-box video');
+const videoModal = document.getElementById('videoModal');
+const modalVideo = document.getElementById('modalVideo');
+const closeVideoModal = document.querySelector('.video-modal .close');
+
+modalVideo.volume = 0.5;
+
+videoBox.addEventListener('click', () => {
+  videoModal.style.display = 'flex';
+  modalVideo.currentTime = 0; // restart video each time
+  modalVideo.play();
+});
+
+closeVideoModal.addEventListener('click', () => {
+  videoModal.style.display = 'none';
+  modalVideo.pause();
+});
+
+// Optional: close modal if user clicks outside the video
+window.addEventListener('click', (e) => {
+  if (e.target === videoModal) {
+    videoModal.style.display = 'none';
+    modalVideo.pause();
+  }
+});

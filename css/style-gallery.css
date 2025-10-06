@@ -33,6 +33,20 @@ body {
   filter: brightness(75%) blur(5px);
 }
 
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden;
+}
+
+
+
 /* ===== Header ===== */
 .header {
   position: fixed;
@@ -41,6 +55,7 @@ body {
   width: 100%;
   padding: 20px 10%;
   background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: space-between;
@@ -109,8 +124,8 @@ body {
 }
 
 .video-box:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 40px rgba(0, 171, 240, 0.6);
+  box-shadow: 0 0 40px #00abf0;
+  cursor: pointer;
 }
 
 /* ===== Section Heading ===== */
@@ -276,6 +291,23 @@ body {
   background: #00abf0;
 }
 
+.wrapper .swiper-pagination-bullet-active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #0e516c;
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: autoplay-loading 5s linear forwards;
+}
+
+.container:hover .wrapper .swiper-pagination-bullet-active::before {
+  animation-play-state: paused;
+}
+
 .home-sci {
     position: absolute;
     bottom: 40px;
@@ -376,6 +408,11 @@ body {
   color: white;
   cursor: pointer;
   z-index: 10000;
+  transition: 0.3s;
+}
+
+.modal .close:hover {
+  color: #00abf0;
 }
 
 .modal .modal-swiper {
@@ -391,4 +428,39 @@ body {
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
+}
+
+/* ===== Video Modal Styling ===== */
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-modal video {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00abf0;
+}
+
+.video-modal .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.video-modal .close:hover {
+  color: #00abf0;
 }
