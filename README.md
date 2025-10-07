@@ -38,6 +38,7 @@ Recently Fixed🔨:
 3. Added more information elements.
 4. Removed unnecessary content and fixed out-of-place webkit elements.
 5. Fixed compatibility issues for all browsers.
+6. Fixed spacing issues in gallery.html: It's kind of innovative, since CSS was not really helping, I added a <p>‎‎‎‎</p>, that has a invisible character in it: ‎  (its not a space, its an actual character). Website I got it from: https://www.editpad.org/tool/invisible-character
 
 Bugs 🐜:
 1. Becomes distorted when viewed from different devices/dimensions.
