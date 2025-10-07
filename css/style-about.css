@@ -161,7 +161,7 @@ button:hover {
     padding: 40px;
     border-radius: 15px;
     -webkit-backdrop-filter: blur(15px); /* Safari support */
-    backdrop-filter: blur(15px); /* frosted glass effect */
+    backdrop-filter: blur(15px); /* frosted glass effect 
 }
 
 /* Inner section styling */

@@ -184,8 +184,8 @@ button:hover {
     width: 90%;
     margin: 100px auto; /* pushes below navbar */
     border-radius: 15px;
-    -webkit-backdrop-filter: blur(50px); /* Safari support */
-    backdrop-filter: blur(25px); /* Standard property for compatibility */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    backdrop-filter: blur(10px); /* Standard property for compatibility */
     display: flex;
     justify-content: center; /* center the inner cards container */
 }
